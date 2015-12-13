@@ -8,15 +8,16 @@ class RenderComp extends Component
 	
 	public function new(region:Region) 
 	{
-		super();		
-		reg = region;
+		super();
+		
+		reg = region;		
 	}
 	
-	public function render(g:Graphics)
+	public function render(g:Graphics, cx:Float, cy:Float)
 	{
 		g.drawScaledSubImage(reg.image, reg.sx, reg.sy,
 							reg.width, reg.height,
-							entity.x, entity.y,
+							entity.x - cx, entity.y - cy,
 							reg.width, reg.height);
 	}
 }

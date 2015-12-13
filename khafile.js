@@ -1,4 +1,4 @@
-var project = new Project('ldw');
+var project = new Project('LD34');
 
 project.addAssets('Assets/**');
 

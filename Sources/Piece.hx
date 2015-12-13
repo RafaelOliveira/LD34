@@ -12,17 +12,18 @@ class Piece extends Entity
 	public var face2:Face;
 	
 	/** Available face */
-	public var avFace:Face;
+	public var avFace:Face;	
 	
-	public var tx(get, set):Int;
-	public var ty(get, set):Int;
-	
-	public function new(id:Int, avFace:Face = null)
+	public function new(id:Int, avFace:Face = null, isRoot:Bool = false)
 	{
 		super();
 		
 		this.id = id;
 		this.avFace = avFace;
+		
+		if (!isRoot)
+			type = 'piece';
+		
 		setupFaces();
 		setRender(new RenderComp(Atlas.get('piece$id')));
 	}
@@ -51,30 +52,6 @@ class Piece extends Entity
 				face2 = Face.Top;
 		}
 	}
-	
-	function get_tx():Int 
-	{
-		return Std.int((x - 10) / 60);
-	}
-	
-	function set_tx(value:Int):Int 
-	{
-		x = (value * 60) + 10;
-		
-		return value;
-	}
-	
-	function get_ty():Int 
-	{
-		return Std.int(y / 60);
-	}
-	
-	function set_ty(value:Int):Int 
-	{
-		y = value * 60;
-		
-		return value;
-	}	
 	
 	public function addPiece(another:Piece):Bool
 	{

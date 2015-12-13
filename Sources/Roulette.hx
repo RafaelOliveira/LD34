@@ -11,6 +11,7 @@ class Roulette extends Entity
 	static var pieces:Array<Region>;
 	
 	public var id:Int;
+	var timerId:Int;
 	
 	public function new(pos:Int) 
 	{
@@ -21,7 +22,7 @@ class Roulette extends Entity
 		else
 			super(405, 540);
 			
-		id = getNewId();	
+		id = getNewId();		
 			
 		var reg = Atlas.get('piece$id');
 		setRender(new RenderComp(reg));
@@ -36,7 +37,12 @@ class Roulette extends Entity
 	
 	public inline function start()
 	{
-		Scheduler.addTimeTask(switchPiece, 0, 1);
+		timerId = Scheduler.addTimeTask(switchPiece, 0, 1);		
+	}
+	
+	public inline function pause(paused:Bool)
+	{
+		Scheduler.pauseTimeTask(timerId, paused);
 	}
 	
 	inline function switchPiece()

@@ -2,6 +2,7 @@ package;
 
 import kha.Assets;
 import kha.graphics2.Graphics;
+import kha.graphics2.ImageScaleQuality;
 import kha.Color;
 import kha.Framebuffer;
 import kha.Image;
@@ -38,15 +39,17 @@ class LD34
 		Olie.update();
 	}
 
-	public function render(framebuffer: Framebuffer):Void 
+	public function render(framebuffer:Framebuffer):Void 
 	{
+		framebuffer.g2.imageScaleQuality = ImageScaleQuality.High;
+		
 		// clear our backbuffer using graphics2
 		g.begin(Color.White);
 		Olie.scene.render(g);
 		g.end();
 
 		// draw our backbuffer onto the active framebuffer
-		framebuffer.g2.begin();
+		framebuffer.g2.begin();		
 		Scaler.scale(backbuffer, framebuffer, System.screenRotation);
 		framebuffer.g2.end();
 	}

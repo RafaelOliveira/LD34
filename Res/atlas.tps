@@ -198,6 +198,9 @@
             <filename>piece4.png</filename>
             <filename>piece5.png</filename>
             <filename>piece6.png</filename>
+            <filename>vase.png</filename>
+            <filename>bush.png</filename>
+            <filename>game_over.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
