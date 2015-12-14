@@ -15,7 +15,8 @@ import scenes.Play;
 class LD34 
 {	
 	var backbuffer:Image;
-	var g:Graphics;		
+	var g:Graphics;
+	var initialized: Bool = false;
 
 	public function new() 
 	{	
@@ -24,27 +25,33 @@ class LD34
 	
 	private function loadingFinished():Void 
 	{
+		initialized = true;
+		
 		backbuffer = Image.createRenderTarget(800, 600);
 		g = backbuffer.g2;
+		g.font = Assets.fonts.HelvetiPixel;		
 	
 		Olie.setup();
-		Olie.scene = new Play();
-		
-		System.notifyOnRender(render);
-		Scheduler.addTimeTask(update, 0, 1 / 60);
+		Olie.scene = new Play();		
 	}
 	
 	public function update()
-	{		
+	{	
+		if (!initialized)
+			return;
+			
 		Olie.update();
 	}
 
 	public function render(framebuffer:Framebuffer):Void 
 	{
-		framebuffer.g2.imageScaleQuality = ImageScaleQuality.High;
+		if (!initialized)
+			return;
+		
+		//framebuffer.g2.imageScaleQuality = ImageScaleQuality.High;
 		
 		// clear our backbuffer using graphics2
-		g.begin(Color.White);
+		g.begin(Color.fromValue(0xff00bfff));
 		Olie.scene.render(g);
 		g.end();
 

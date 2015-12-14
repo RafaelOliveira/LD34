@@ -24,10 +24,21 @@ class Scene
 	
 	public function removeByType(level:Int, type:String)
 	{
-		for (entity in entities[level])
+		var isRemoving = true;
+		
+		while (isRemoving)
 		{
-			if (entity.type == type)			
-				entities[level].remove(entity);			
+			isRemoving = false;
+			
+			for (entity in entities[level])
+			{
+				if (entity.type == type)
+				{
+					entities[level].remove(entity);
+					isRemoving = true;
+					break;
+				}
+			}
 		}
 	}
 	
@@ -68,5 +79,13 @@ class Scene
 					entity.render(g, entity.fixedCamX ? 0 : camera.x, entity.fixedCamY ? 0 : camera.y);
 			}	
 		}		
+	}
+	
+	inline public function renderRegion(g:Graphics, reg:Region, useCamera:Bool = false)
+	{
+		g.drawScaledSubImage(reg.image, reg.sx, reg.sy, 
+							reg.width, reg.height, 
+							useCamera ? reg.x - camera.x : reg.x, useCamera ? reg.y - camera.y : reg.y,
+							reg.width, reg.height);
 	}	
 }

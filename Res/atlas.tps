@@ -201,6 +201,11 @@
             <filename>vase.png</filename>
             <filename>bush.png</filename>
             <filename>game_over.png</filename>
+            <filename>level_line.png</filename>
+            <filename>bg.png</filename>
+            <filename>ground.png</filename>
+            <filename>panel.png</filename>
+            <filename>title.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

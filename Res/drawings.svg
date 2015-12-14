@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="392.92307"
-     inkscape:cy="275.03033"
+     inkscape:cx="546.19903"
+     inkscape:cy="315.03033"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
      units="px"
-     inkscape:window-width="1600"
-     inkscape:window-height="837"
-     inkscape:window-x="1358"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -498,35 +498,30 @@
          id="circle4304"
          style="opacity:1;fill:#008000;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
-    <g
-       id="game_over"
-       inkscape:label="#g4320"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <text
-         sodipodi:linespacing="125%"
-         id="text4308"
-         y="597.36218"
-         x="201"
-         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           style="-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-           id="tspan4312"
-           y="597.36218"
-           x="201"
-           sodipodi:role="line">Game Over</tspan></text>
-      <text
-         sodipodi:linespacing="125%"
-         id="text4316"
-         y="637.09076"
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:86.1016922px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="116"
+       y="608.88763"
+       id="text4308"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="116"
+         y="608.88763"
+         id="tspan4312"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:HelvetiPixel;-inkscape-font-specification:'HelvetiPixel Medium'">Game Over</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.26740646px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="227.67424"
+       y="637.09076"
+       id="text4316"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4318"
          x="227.67424"
-         style="font-style:normal;font-weight:normal;font-size:17.26740646px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="637.09076"
-           x="227.67424"
-           id="tspan4318"
-           sodipodi:role="line">press start to try again</tspan></text>
-    </g>
+         y="637.09076"
+         style="-inkscape-font-specification:'HelvetiPixel Medium';font-family:HelvetiPixel;font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal">press start to try again</tspan></text>
     <g
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -640,19 +635,26 @@
        inkscape:label="#g4196"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"
-       style="fill:#0000ff">
+       style="fill:#0000ff;fill-opacity:0.45333335">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path4358"
          d="m 140,776.36218 78,0 -14.24821,60 -49.50358,0 z"
-         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#0000ff;fill-opacity:0.45333335;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
-         style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#0000ff;fill-opacity:0.45333335;stroke:none;stroke-width:5;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 140,776.36218 78,0 0.50179,10 -79.00358,0 z"
          id="path4360"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
     </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.13999999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:6.83999991,6.83999991;stroke-dashoffset:0"
+       d="m 1,535.36219 800,0"
+       id="path4232"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
 </svg>

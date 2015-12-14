@@ -36,7 +36,7 @@ class Roulette extends Entity
 	}
 	
 	public inline function start()
-	{
+	{		
 		timerId = Scheduler.addTimeTask(switchPiece, 0, 1);		
 	}
 	
